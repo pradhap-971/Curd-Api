@@ -1,0 +1,300 @@
+body{
+ text-align: center;
+ background-image: url("D:\Curdapi\my-app\src\Compoents\images\971.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+ color: rgb(245, 241, 240);
+
+}
+
+h1{
+    color: tomato;
+}
+
+.tableapi{
+    padding: 25px;
+    color: rgb(245, 241, 240);
+    margin-left: 19%;
+    text-align: center;
+    outline: rgb(15, 195, 93) 5px double;
+   
+    background-image: url("D:\Curdapi\my-app\src\Compoents\images\971.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+
+    
+}
+
+tr,th,td{
+    padding: 50px;
+    text-shadow: 5px 5px 10px #a53535;
+    background-image: url("D:\Curdapi\my-app\src\Compoents\images\971.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+ outline: rgb(15, 195, 93) 2px solid;
+ outline-color: azure;
+
+}
+
+
+    /* edit button css  */
+.edit-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none !important;
+  }
+  
+  .edit-svgIcon {
+    width: 17px;
+    transition-duration: 0.3s;
+  }
+  
+  .edit-svgIcon path {
+    fill: white;
+  }
+  
+  .edit-button:hover {
+    width: 120px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(255, 69, 69);
+    align-items: center;
+  }
+  
+  .edit-button:hover .edit-svgIcon {
+    width: 20px;
+    transition-duration: 0.3s;
+    transform: translateY(60%);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  
+  .edit-button::before {
+    display: none;
+    content: "Edit";
+    color: white;
+    transition-duration: 0.3s;
+    font-size: 2px;
+  }
+  
+  .edit-button:hover::before {
+    display: block;
+    padding-right: 10px;
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-duration: 0.3s;
+  }
+  
+
+
+  /* delete button css */
+.delete-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .delete-svgIcon {
+    width: 15px;
+    transition-duration: 0.3s;
+  }
+  
+  .delete-svgIcon path {
+    fill: white;
+  }
+  
+  .delete-button:hover {
+    width: 90px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(255, 69, 69);
+    align-items: center;
+  }
+  
+  .delete-button:hover .delete-svgIcon {
+    width: 20px;
+    transition-duration: 0.3s;
+    transform: translateY(60%);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  
+  .delete-button::before {
+    display: none;
+    content: "Delete";
+    color: white;
+    transition-duration: 0.3s;
+    font-size: 2px;
+  }
+  
+  .delete-button:hover::before {
+    display: block;
+    padding-right: 10px;
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-duration: 0.3s;
+  }
+
+
+
+
+  /* add new data button css  */
+  
+.button {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -4px;
+  top: -1px;
+  margin: auto;
+  width: 128px;
+  height: 48px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.button::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.button:hover::after {
+  filter: blur(30px);
+}
+
+.button:hover::before {
+  transform: rotate(-180deg);
+}
+
+.button:active::before {
+  scale: 0.7;
+}
+
+
+
+
+/* Enter user name , user email , user address css  */
+
+
+
+.coolinput {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  position: static;
+  max-width: 240px;
+}
+
+.coolinput label.text {
+  font-size: 0.75rem;
+  color: #818CF8;
+  font-weight: 700;
+  position: relative;
+  top: 0.5rem;
+  margin: 0 0 0 7px;
+  padding: 0 3px;
+  background: #e8e8e8;
+  width: fit-content;
+}
+
+.coolinput input[type=text].input {
+  padding: 11px 10px;
+  font-size: 0.75rem;
+  border: 2px #818CF8 solid;
+  border-radius: 5px;
+  background: #e8e8e8;
+}
+
+.coolinput input[type=text].input:focus {
+  outline: none;
+}
+
+
+
+.navBar{
+  position: absolute;
+  background: var(--whiteColorDeam); 
+  height: max-content;
+  width: 80%;             
+  border-radius: 1rem;              
+  top: -500rem;             
+  left: 50%; 
+  padding: 1px;            
+  transform: translate(-50%);             
+  z-index: 2000;             
+  box-shadow: 0 2px 4px rgba(2, 12, 23, 0.904);             
+  transition: .5s ease-in-out;
+}
+
+.closeNavbar{
+  position: absolute;
+  top : 1rem;
+  right: 1.5rem;
+  color: var(--primaryColor);
+  &:hover{
+      color: var(--SecondaryColor);
+  }
+}
+
+.activeNavbar{
+  top: 7rem;
+}
